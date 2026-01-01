@@ -23,13 +23,13 @@ body {
     margin-top: 100px;
 }
 
-img {
+.content img {
     height: 200px;
     max-width: 200px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    background-color: dodgerblue;
+    background-color: powderblue;
     border-radius: 50%;
     padding: 12px;
 }
@@ -40,7 +40,7 @@ img {
 
 button {
     padding: 15px;
-    background-color: dodgerblue;
+    background-color: powderblue;
     border: none;
     font-size:24px;
     transition: color 1s;
@@ -52,5 +52,26 @@ button:hover {
 
 .about-section p {
     margin-top: 1px;
+}
+
+.footer {
+    background-color: powderblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    height: 100px;
+}
+
+.footer a {
+    padding: 15px;
+    color: black;
+    display: inline-block;
+    margin:0;
+}
+
+.footer-icon {
+    width:30px;
+    height:30px;
 }
 
