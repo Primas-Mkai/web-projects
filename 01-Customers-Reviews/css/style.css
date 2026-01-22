@@ -110,7 +110,7 @@ footer .icons img {
     }
 }
 
-@media screen and (max-width: 348px) {
+@media screen and (max-width: 430px) {
     body {
         top: 44px;
     }
