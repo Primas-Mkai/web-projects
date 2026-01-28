@@ -1,8 +1,16 @@
 body {
     margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 88px 0;
+}
+
+main section .sub-section img {
+    width: 90px;
+    height: 36px;
 }
 
 img {
-    width: 536px;
+    max-width: 536px;
     height: 840px;
 }
