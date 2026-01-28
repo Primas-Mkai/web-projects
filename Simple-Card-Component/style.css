@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 363px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.card img {
+    max-width: 100%;
+    height: 247px;
+    border-radius: 10px;
+    margin: 12px 13px 0;
+}
+
+.card p {
+    font-weight: medium;
+    font-size: 20px;
+    margin: 22px 21px 28px 25px
+}
+
+.card .footer {
+    width: 153px;
+    height: 59px;
+    margin: 0 0 34px 23px;
+    position: relative;
+}
+
+.card .footer img {
+    width: 59px;
+    height: 59px;
+    border-radius: 36px;
+    margin:0;
+}
+
+.card .footer .profile-info {
+    position: absolute;
+    top:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .footer .profile-info span.name,span.status {
+    font-family: "Alata", sans-serif;
+}
+
+.card .footer .profile-info span.name {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.card .footer .profile-info span.status {
+    font-size : 16px;
+    color : #BABCC1;
+}
