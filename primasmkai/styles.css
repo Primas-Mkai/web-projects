@@ -140,7 +140,12 @@ h2 { font-size: 32px; font-weight: 800; letter-spacing: -0.025em; line-height: 1
 /* Projects */
 .project-list { margin-top: 32px; border-bottom: 1px solid var(--line); }
 .project-row { border-top: 1px solid var(--line); display: grid; gap: 24px; padding: 32px 0; }
-.project-shot { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 16px; border: 1px solid var(--line); background: var(--chip); box-shadow: 0 1px 2px rgba(17,20,24,.06), 0 16px 40px -16px rgba(17,20,24,.22); }
+.project-shot-link { display: block; overflow: hidden; border-radius: 16px; border: 1px solid var(--line); box-shadow: 0 1px 2px rgba(17,20,24,.06), 0 16px 40px -16px rgba(17,20,24,.22); cursor: pointer; }
+.project-shot-link:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+.project-shot { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--chip); transition: transform 500ms ease-out; }
+@media (hover: hover) { .project-shot-link:hover .project-shot { transform: scale(1.05); } }
+.project-shot-link:focus-visible .project-shot { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .project-shot { transition: none; } .project-shot-link:hover .project-shot, .project-shot-link:focus-visible .project-shot { transform: none; } }
 .project-info { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .project-label { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--faint); }
 .project-info h3 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; color: var(--ink); }
